@@ -16,7 +16,6 @@
 /* colors end */
   --curved-corners: 3px;
   --bold: 700;
-
 }
 
 body {
@@ -26,6 +25,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+
 
 h1 {
   font-size: 30px;
@@ -227,7 +227,7 @@ thead {
     fill: var(--bright-yellow-sun);
   }
   100% {
-    fill: var(red-sun);
+    fill: var(--red-sun);
     }
 }
 .sun {
