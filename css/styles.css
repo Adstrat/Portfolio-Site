@@ -1,7 +1,7 @@
 :root {
 /* colors */
   --blue: #006394;
-  --light-blue: #b7dbf6;
+  --light-grey: #d8d8d8;
   --dark-blue: #003e5f;
   --pea-green: #597b32;
   --pale-green: #5dc59a;
@@ -19,7 +19,7 @@
 }
 
 body {
-  background-color: var(--light-blue);
+  background-color: var(--light-grey);
   font-family: 'Inconsolata', sans-serif;
   font-weight: 400;
   font-size: 16px;
