@@ -106,7 +106,6 @@ thead {
   display: flex;
   background-color: #767676;
   width: 100%;
-  max-height: 120px;
   padding: 20px;
   border-bottom: 1px solid #000;
 }
@@ -383,6 +382,10 @@ thead {
   .project-list__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
+  }
+
+  .page-header {
+
   }
 
   h1 {
