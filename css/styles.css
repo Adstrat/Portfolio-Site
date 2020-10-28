@@ -99,9 +99,12 @@ thead {
   display: flex;
   background-color: var(--grey);
   width: 100%;
-  max-height: 120px;
   padding: 20px;
   border-bottom: 1px solid var(--black);
+}
+
+.logo {
+  max-height: 80px;
 }
 
 .page-header__item {
@@ -281,10 +284,6 @@ thead {
 @media all and (max-width: 750px) {
   .berlin-illustration {
     max-width: 100%;
-  }
-
-  .bus {
-    height: 80px;
   }
 
   .project-list {
