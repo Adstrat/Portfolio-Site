@@ -106,7 +106,8 @@ thead {
   display: flex;
   background-color: #767676;
   width: 100%;
-  padding: 40px;
+  padding: 20px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #000;
 }
 
