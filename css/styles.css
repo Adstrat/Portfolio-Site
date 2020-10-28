@@ -99,7 +99,7 @@ thead {
   display: flex;
   background-color: var(--grey);
   width: 100%;
-  padding: 20px;
+  padding: 40px;
   border-bottom: 1px solid var(--black);
 }
 
