@@ -230,6 +230,10 @@ thead {
   border-top: 1px solid #000;
 }
 
+.social-media a {
+  text-decoration: none;
+}
+
 .highlight-word {
   color: #fff;
   background-color: #bf0000;
