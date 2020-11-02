@@ -1,3 +1,5 @@
+/* make changes in styles.css, copy paste into https://madlittlemods.github.io/postcss-css-variables/playground/ to convert vairables. Then copy into http://autoprefixer.github.io/ to support more browsers. Finally paste into style.production.css */
+
 :root {
   /* colors */
   --blue: #006394;
@@ -192,6 +194,9 @@ thead {
   flex-direction: column;
   text-align: center;
   border-top: 1px solid var(--black);
+}
+.social-media a {
+  text-decoration: none;
 }
 
 .highlight-word {
