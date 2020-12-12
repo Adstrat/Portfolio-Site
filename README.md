@@ -1,3 +1,3 @@
 Link to my Portfolio Site:</br>
 
-https://adstrat.github.io/Portfolio-Site/
+<a href="https://adstrat.github.io/Portfolio-Site/ target="_blank">
