@@ -34,26 +34,6 @@ h3 {
   font-weight: 700;
 }
 
-a {
-  color: #000;
-}
-
-a:visited {
-  /* visited link */
-  color: #000;
-}
-
-a:hover,
-a:focus {
-  /* No underlining when hovering over a link */
-  text-decoration: none;
-}
-
-a:active {
-  /* seleceted link */
-  color: #003e5f;
-}
-
 button {
   border: none;
   display: inline-block;
@@ -90,14 +70,6 @@ button:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.8;
-}
-
-table {
-  text-align: center;
-}
-
-thead {
-  text-decoration: underline;
 }
 
 .page-header {
@@ -137,6 +109,16 @@ thead {
   margin-left: 15px;
 }
 
+.navigation-list__item {
+  text-decoration: none;
+  color: #000;
+}
+
+.navigation-list__item:visited {
+  text-decoration: none;
+  color: #000;
+}
+
 .navigation-list__item--active {
   text-decoration: none;
   color: #fff;
@@ -145,6 +127,14 @@ thead {
 .navigation-list__item--active:visited {
   text-decoration: none;
   color: #fff;
+}
+
+.navigation-list__item:hover {
+  color: #003e5f;
+}
+
+.navigation-list__item:focus {
+  color: #003e5f;
 }
 
 .hobbies-list {
