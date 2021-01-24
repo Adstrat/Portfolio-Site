@@ -1,4 +1,4 @@
-/* make changes in styles.css, copy paste into https://madlittlemods.github.io/postcss-css-variables/playground/ to convert vairables. Then copy into http://autoprefixer.github.io/ to support more browsers. Finally paste into style.production.css */
+/* make changes in styles.css, copy paste into https://madlittlemods.github.io/postcss-css-variables/playground/ to convert variables. Then copy into http://autoprefixer.github.io/ to support more browsers. Finally paste into style.production.css */
 
 :root {
   /* colors */
@@ -26,7 +26,7 @@
 
 body {
   background-color: var(--light-grey);
-  font-family: 'Inconsolata', sans-serif;
+  font-family: "Inconsolata", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -231,7 +231,7 @@ thead {
   }
 
   .project-list__item a {
-    color: var(--dark-blue);
+    color: var(--white);
   }
 
   .project-list__item:last-child {
