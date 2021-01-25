@@ -79,6 +79,8 @@ button:focus,
 
 .logo {
   max-height: 80px;
+  padding: 3px;
+  border: 1px solid var(--black);
 }
 
 .page-header__item {
@@ -122,6 +124,10 @@ button:focus,
   padding: 0;
 }
 
+.main-section {
+  padding: 0 20% 50px;
+}
+
 .profile {
   display: flex;
   padding: 80px 20px;
@@ -129,15 +135,25 @@ button:focus,
   flex-wrap: wrap;
 }
 
+.photo-wrapper {
+  padding: 0 50px;
+}
+
 .profile__portrait {
-  border-radius: 50%;
+  border-radius: 20%;
   width: 280px;
-  padding: 20px;
+  padding: 15px;
+  border: thick double var(--black);
   flex: 0 1 auto;
 }
 
 .profile__item {
   text-align: center;
+}
+
+.bio {
+  padding: 0 20px;
+  border: 1px solid var(--black);
 }
 
 .main-section-about,
@@ -193,7 +209,32 @@ button:focus,
 
 .border {
   border: 1px dashed var(--black);
-  padding: 5px 7px;
+  padding: 4px 8px;
+  display: inline-block;
+}
+
+.intro1 {
+  animation: easeIn 0.5s ease-out 0s;
+}
+
+.intro2 {
+  animation: easeIn 1.5s ease-out 0s;
+}
+
+.intro3 {
+  animation: easeIn 2.5s ease-out 0s;
+}
+
+.intro4 {
+  animation: easeIn 4s ease-out 0s;
+}
+
+.intro5 {
+  animation: easeIn 5.5s ease-out 0s;
+}
+
+.intro6 {
+  animation: easeIn 6s ease-out 0s;
 }
 
 /* start project-list fallback */
@@ -227,6 +268,19 @@ button:focus,
   .project-list__item:last-child {
     grid-column: 3 / 3;
     grid-row: 1 / 3;
+  }
+}
+/* ANIMATIONS */
+
+@keyframes easeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
   }
 }
 
