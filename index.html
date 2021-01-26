@@ -18,85 +18,94 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
-    <header class="page-header">
+    <!-- top section -->
+
+    <div class="photo-wrapper">
       <img
-        src="img/andrews-logo.jpg"
-        alt="personal logo for andrew stratton"
-        class="page-header__item logo"
+        src="img/photo-of-andy.jpg"
+        class="profile__portrait"
+        alt="Andrew Stratton Portrait"
       />
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item--active"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About Me</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
-              >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="main-section">
-      <div class="profile">
-        <div class="photo-wrapper">
-          <img
-            src="img/photo-of-andy.jpg"
-            class="profile__portrait"
-            alt="Andrew Stratton Portrait"
-          />
-        </div>
-        <div class="profile__item">
-          <h1>
-            <span class="intro1">Hi, </span><span class="intro2">I'm </span>
-            <span class="intro3">Andrew </span>
-            <span class="intro4">Stratton</span><span class="intro5">.</span
-            ><span class="intro6">.</span>
-          </h1>
-          <p>
-            <span class="intro7">
-              ..a <span class="highlight-word">web</span> developer in Berlin,
-              Germany.</span
-            >
-            <br /><br /><span class="intro8">
-              And I write code in: <br />
-              <span class="border">HTML - CSS - JavaScript</span></span
-            >
-          </p>
-          <br /><span class="intro9">
-            <a href="work.html" class="button">View my work</a></span
-          >
-        </div>
+    </div>
+    <div class="top-section">
+      <h1>
+        <span class="intro1">Hi, </span><span class="intro2">I'm </span>
+        <span class="intro3">Andrew </span>
+        <span class="intro4">Stratton..</span>
+      </h1>
+      <p>
+        <span class="intro5">
+          ..a <span class="highlight-word">web</span> developer based in Berlin,
+          Germany.</span
+        > <br> <br> <br>
+        <span class="intro6">Click on the links to see what I do</span>
+      </p>
+      <br />
+      <div class="content">
+        <a href="about.html" class="button">Bio</a>
+        <a href="work.html" class="button">Projects</a>
+        <a href="contact.html" class="button">Contact</a>
       </div>
-      <div class="bio">
+    </div>
+      <!-- bio section -->
+      <div class="profile">
+      <div class="info-section">
         <h1>Bio..</h1>
         <p>
           Originally from Brighton, England, I now live in Berlin with my
-          family. <br />
-          Aside from programming, I enjoy yoga and meditation, carpentry,
-          juggling and painting. <br />
-          <br />
-          After years of dreaming about making websites, I finally decided to
-          invest in the CareerFoundry 7 month web development bootcamp. A
-          comprehensive immersion course that covers..
+          family. <br /><br>
+          I love developing apps and websites. I've trained using HTML5, CSS3, JavaScript
+          and a heap of other tools. And I love to keep learning more.<br><br>
+          Aside from programming, I enjoy yoga, meditation,
+          carpentry, juggling and painting.
         </p>
+      </div><br>
+      <!-- project section -->
+      <div class="info-section">
+        <h1>My Projects..</h1>
+        <div class="projects">
+          <h2>Pokédex Web App</h2>
+          <p>
+            This project was was written in HTML, CSS, and JavaScript, using the
+            Bootstrap framework and an external Pokemon API.
+          </p>
+          <a
+            href="https://github.com/Adstrat/pokedex-js-app"
+            class="button"
+            target="blank"
+            >View Code</a
+          >
+          <a
+            href="https://adstrat.github.io/pokedex-js-app/"
+            class="button"
+            target="blank"
+            >View App</a
+          >
+        </div>
+        <div class="projects">
+          <h2>To do List App</h2>
+          <p>
+            This is a simple to-do list app built using jQuery.
+          </p>
+          <a
+            href="https://github.com/Adstrat/to-do-list-app"
+            class="button"
+            target="blank"
+            >View Code</a
+          >
+          <a
+            href="https://adstrat.github.io/to-do-list-app/"
+            class="button"
+            target="blank"
+            >View App</a
+          >
+        </div>
+        <div class="projects">
+          <h2>App 3</h2>
+          <p>Another project goes here.</p>
+          <a href="#">See project on Github</a>
+        </div>
       </div>
-    </div>
     <footer class="page-footer">
       <h3>Find me on</h3>
       <div class="social-media">

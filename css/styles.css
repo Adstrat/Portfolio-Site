@@ -52,7 +52,7 @@ button,
   border: none;
   display: inline-block;
   font-family: "Public Sans", "sans-serif";
-  background-color: var(--blue);
+  background-color: var(--dark-blue);
   color: var(--white);
   text-decoration: none;
   padding: 10px;
@@ -69,7 +69,7 @@ button:focus,
   opacity: 0.8;
 }
 
-.page-header {
+/*.page-header {
   display: flex;
   background-color: var(--grey);
   width: 100%;
@@ -122,21 +122,35 @@ button:focus,
 .hobbies-list {
   list-style-type: none;
   padding: 0;
+}*/
+
+.top-section {
+  padding: 0 20% 50px;
+  text-align: center;
 }
 
-.main-section {
-  padding: 0 20% 50px;
+.info-section {
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  color: var(--dark-blue);
+  padding: 15px 40px;
+  animation: easeIn 1.5s;
+}
+
+.info-section h1 {
+  color: var(--black);
 }
 
 .profile {
   display: flex;
-  padding: 80px 20px;
+  padding: 40px 10%;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .photo-wrapper {
-  padding: 0 50px;
+  padding: 20px 50px;
+  text-align: center;
 }
 
 .profile__portrait {
@@ -145,21 +159,20 @@ button:focus,
   padding: 15px;
   border: thick double var(--black);
   flex: 0 1 auto;
-  animation: flicker 0.8s;
+  animation: easeIn 1.5s;
 }
 
 .profile__item {
   text-align: center;
 }
 
-.bio {
-  padding: 0 20px;
-  border: 1px solid var(--black);
-  animation: easeIn2 12s ease-out 0s;
+.projects {
+    border: 1px solid var(--black);
+    padding: 10px 20px;
+    margin: 20px 0;
 }
 
-.main-section-about,
-.main-section-work {
+.main-section-about {
   text-align: center;
   padding: 0 20px;
 }
@@ -215,40 +228,32 @@ button:focus,
   display: inline-block;
 }
 
+.content {
+  animation: easeIn 1.5s;
+}
+
 .intro1 {
-  animation: easeIn 2.5s ease-out 0s;
+  animation: easeIn2 2.2s ease-out 0s;
 }
 
 .intro2 {
-  animation: easeIn 3.5s ease-out 0s;
+  animation: easeIn2 2.6s ease-out 0s;
 }
 
 .intro3 {
-  animation: easeIn 4.5s ease-out 0s;
+  animation: easeIn2 3.2s ease-out 0s;
 }
 
 .intro4 {
-  animation: easeIn 6s ease-out 0s;
+  animation: easeIn2 3.7s ease-out 0s;
 }
 
 .intro5 {
-  animation: easeIn 7.5s ease-out 0s;
+  animation: Flicker 6.5s ease-out 0s;
 }
 
 .intro6 {
-  animation: easeIn 8.5s ease-out 0s;
-}
-
-.intro7 {
-  animation: easeInFlick 9.5s ease-out 0s;
-}
-
-.intro8 {
-  animation: easeIn2 9s ease-out 0s;
-}
-
-.intro9 {
-  animation: easeIn2 11s ease-out 0s;
+  animation: easeIn2 6s ease-out 0s;
 }
 
 /* start project-list fallback */
@@ -260,7 +265,8 @@ button:focus,
 
 /* end project-list fallback */
 
-@supports (display: grid) {
+/*
+ @supports (display: grid) {
   .project-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -283,15 +289,19 @@ button:focus,
     grid-column: 3 / 3;
     grid-row: 1 / 3;
   }
-}
+} */
+
 /* ANIMATIONS */
 
 @keyframes easeIn {
   0% {
     opacity: 0;
   }
-  50% {
+  30% {
     opacity: 0;
+  }
+  60% {
+    opacity: 50%;
   }
   100% {
     opacity: 100%;
@@ -310,37 +320,7 @@ button:focus,
   }
 }
 
-@keyframes flicker {
-  0% {
-    opacity: 100%;
-  }
-  5% {
-    opacity: 0%;
-  }
-  10% {
-    opacity: 100%;
-  }
-  20% {
-    opacity: 100%;
-  }
-  25% {
-    opacity: 0%;
-  }
-  30% {
-    opacity: 100%;
-  }
-  65% {
-    opacity: 100%;
-  }
-  70% {
-    opacity: 0%;
-  }
-  75% {
-    opacity: 100%;
-  }
-}
-
-@keyframes easeInFlick {
+@keyframes Flicker {
   0% {
     opacity: 0%;
   }
@@ -425,11 +405,12 @@ button:focus,
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+
 @media all and (max-width: 750px) {
   .berlin-illustration {
     max-width: 100%;
   }
-
+/*
   .project-list {
     grid-gap: 10px;
   }
@@ -458,4 +439,4 @@ button:focus,
   .project-list {
     grid-template-columns: 1fr 1fr;
   }
-}
+} */
