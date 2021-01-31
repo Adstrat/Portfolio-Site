@@ -149,6 +149,7 @@ button:focus,
 
 .profile__portrait {
   border-radius: 20%;
+  width: 300px;
   padding: 15px;
   border: 20px;
   border: thick double var(--black);
@@ -160,9 +161,9 @@ button:focus,
 }
 
 .projects {
-    border: 1px solid var(--black);
-    padding: 10px 20px;
-    margin: 20px 0;
+  border: 1px solid var(--black);
+  padding: 10px 20px;
+  margin: 20px 0;
 }
 
 * {
@@ -249,7 +250,6 @@ button:focus,
 .main-section-contact__my-details {
   text-align: center;
 }
-
 
 /* start project-list fallback */
 .project-list__item {
@@ -400,12 +400,12 @@ button:focus,
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-
+/*
 @media all and (max-width: 750px) {
   .berlin-illustration {
     max-width: 100%;
   }
-/*
+
   .project-list {
     grid-gap: 10px;
   }
