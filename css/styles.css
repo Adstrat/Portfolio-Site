@@ -69,14 +69,6 @@ button:focus,
   opacity: 0.8;
 }
 
-.hidden-info {
-  display: none;
-}
-
-.hidden-info.isVisible {
-  display: block;
-}
-
 /*.page-header {
   display: flex;
   background-color: var(--grey);
@@ -142,6 +134,7 @@ button:focus,
   background-color: var(--white);
   color: var(--dark-blue);
   padding: 15px 40px;
+  display: block;
   animation: easeIn 1.5s;
 }
 
