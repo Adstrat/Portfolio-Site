@@ -15,14 +15,14 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
     <!-- top section -->
 
     <div class="top-section">
       <img
-        src="img/andy.jpg"
+        src="img/photo-of-andy.jpg"
         class="profile__portrait"
         alt="Andrew Stratton Portrait"
       />
@@ -48,17 +48,20 @@
       <!-- bio section -->
     <div class="profile">
       <div class="info-section" id="bio">
-        <h1 >Mission Statement</h1>
-        <p>
+        <h1>Bio</h1>
+        <a class="button show-more">Mission Statement</a>
+        <div class="hidden-info">
           I've always enjoyed creativity, in a structured kind of way. Problem
           solving, making things fit, or work well, is somehow rewarding.
           I like that sense of completion, when things come together, to flow beautifully. <br>
           <br>I think in this modern, technological world, there's a chance to make an impact.
           The internet is a mega powerful tool, which can be harnessed for great things.
           It is my hope that I can be a part of that.
-        </p>
-        <h1>My Background</h1>
-        <p>Born in Brighton, England, I've tried my hand at a few things. With an interest in the
+        </div>
+        <br>
+        <a class="button show-more">My Background</a>
+        <div class="hidden-info">
+          Born in Brighton, England, I've tried my hand at a few things. With an interest in the
           mind, I made a diploma in hypnotherapy in 2003, which led me to explore meditation and yoga.
           Some years later I pursued a yearning to make things out of wood, to build in a very physical
           way, and studied carpentry. Throughout this time I worked in social care, mainly with people
@@ -66,8 +69,8 @@
           decided to pursue web development, out of a desire to be involved in helping to
           steer technology in a beneficial direction.<br><br>
           Aside from programming, I also enjoy juggling, painting and being in nature.
-        </p>
-      </div><br>
+        </div>
+      </div>
       <!-- project section -->
       <div class="info-section">
         <h1 id="myprojects">My Projects..</h1>
@@ -130,6 +133,7 @@
         </a>
       </div>
     </footer>
-    <!--<script src="js/tota11y.min.js"></script>-->
+    <script src="js/tota11y.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
