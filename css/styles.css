@@ -148,6 +148,7 @@ button:focus,
 
 .info-section {
   background-color: var(--blue);
+  color: var(--white);
   padding: 20px 40px;
   animation: easeIn 1.5s;
 }
