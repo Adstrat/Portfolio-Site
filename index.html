@@ -1,165 +1,247 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Andrew Stratton - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" href="img/favicon.ico" />
-  <title>Andrew Stratton - Portfolio</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
-</head>
+  <body>
+    <!-- top section -->
 
-<body>
-  <!-- top section -->
-
-  <section class="hero">
-    <div class="hero-inner">
-
-      <h1>
-        <span class="intro1">Hi, </span><span class="intro2">I'm </span>
-        <span class="intro3">Andrew </span>
-        <span class="intro4">Stratton</span>
-        <br>
-        <span class="intro5">Stratton</span>
-      </h1>
-      <h2>
-        <span class="intro6">
-          a web developer based in Berlin,
-          Germany.</span>
-      </h2>
-      <h2>
-        <span class="intro7">
-          a web developer </span>
-        <br>
-        <span class="intro8">
-          based in Berlin, Germany.</span>
-      </h2>
-    </div>
-  </section>
-  <!-- bio section -->
-
-  <div class="info-section">
-    <h1>Bio</h1>
-    <a class="button show-more">Mission Statement</a>
-    <div class="hidden-info">
-      I've always enjoyed creativity, in a structured kind of way. Problem
-      solving, making things fit, or work well, is somehow rewarding. I like
-      that sense of completion, when things come together, to flow
-      beautifully. <br />
-      <br />I think in this modern, technological world, there's a chance to
-      make an impact. The internet is a mega powerful tool, which can be
-      harnessed for great things. It is my hope that I can be a part of that.
-    </div>
-    <br />
-    <a class="button show-more">My Background</a>
-    <div class="hidden-info">
-      Born in Brighton, England, I've tried my hand at a few things. With an
-      interest in the mind, I made a diploma in hypnotherapy in 2003, which
-      led me to explore meditation and yoga. Some years later I pursued a
-      yearning to make things out of wood, to build in a very physical way,
-      and studied carpentry. Throughout this time I worked in social care,
-      mainly with people with autism and learning disabilities. <br /><br />A
-      few years ago I moved to Berlin with my family and decided to pursue web
-      development, out of a desire to be involved in helping to steer
-      technology in a beneficial direction.<br /><br />
-      Aside from programming, I also enjoy juggling, painting and being in
-      nature.
-    </div>
-
-    <!-- project section -->
-
-    <h1 id="myprojects">Development Projects</h1>
-    <div class="projects">
-      <img src="img/meet-app.png" class="project__image" alt="Photo of Meet App" />
-      <h1>Meet App</h1>
-      <p>
-        In this app users can search for web development events by city and
-        adjust the number of events displayed.
-      </p>
-      <p>
-        It is a serverless, progressive web application (PWA) built with
-        REACT. It uses the Google Calandar API to fetch events. During the
-        build, unit and integration tests were implimented, as well as
-        end-to-end tests.
-      </p>
-      <p>
-        The start of this project was my biggest challenge, setting up AWS
-        Lambda and writing the authentication code. I got stuck with a bug for
-        a while which I discovered to be a simple indentation that I'd missed.
-        But as soon as the application was up I enjoyed creating the different
-        features.
-      </p>
-      <p>
-        I still prefer to make features first and then think about the test
-        senarios after, but I'm slowly getting my head around how to think
-        through the tests first.
-      </p>
-      <p>
-        There were times when I would hit a problem, trying to get something
-        to display a certain way, but there's nothing more satisfying than
-        resolving it. And sometimes discovering a neat trick or a way to do
-        things that was better than my original idea. There's always lots of
-        cool stuff to learn!
-      </p>
-      <p>
-        For this project I find the charts and graphs a bit pointless from a
-        UX point of view, but feel they are more of a showcase to practice and
-        display different things I can develop.
-      </p>
-      <a href="https://github.com/Adstrat/meet" class="button" target="blank">Code</a>
-      <a href="https://adstrat.github.io/meet/" class="button" target="blank">Live</a>
-    </div>
-    <div class="projects">
-      <img src="img/pokemon-app.png" class="project__image" alt="Photo of Pokemon App" />
-      <h1>Pokédex Web App</h1>
-      <p>
-        This application displays a list of Pokemon which the user can click
-        on to uncover Pokemon statistics. <br /><br />
-        It uses the Bootstrap framework and was written in HTML5, CSS3,
-        JavaScript and JQuery. It loads data from an external Pokemon API.
-      </p>
-      <a href="https://github.com/Adstrat/pokedex-js-app" class="button" target="blank">Code</a>
-      <a href="https://adstrat.github.io/pokedex-js-app/" class="button" target="blank">Live</a>
-    </div>
-
-    <div class="projects">
-      <img src="img/myFlix80s-app.png" class="project__image" alt="Photo of MyFlix80s App" />
-      <h1>MyFlix80s</h1>
-      <p>This project displays films from the 1980s.</p>
-      <a href="https://github.com/Adstrat/myFlix80s-client" class="button" target="blank">Code</a>
-      <a href="https://myflix80s.netlify.app/" class="button" target="blank">Live</a>
-    </div>
-
-    <div class="projects">
-      <img src="img/todo-app.png" class="project__image" alt="Photo of To Do List App" />
-      <h1>To do List App</h1>
-      <p>
-        This is a simple to-do list app built using jQuery.
-      </p>
-      <a href="https://github.com/Adstrat/to-do-list-app" class="button" target="blank">Code</a>
-      <a href="https://adstrat.github.io/to-do-list-app/" class="button" target="blank">Live</a>
-    </div>
-    <footer class="page-footer">
-      <h3>Find me on</h3>
-      <div class="social-media">
-        <a href="https://github.com/Adstrat" target="_blank">
-          <img src="img/github_icon.svg" alt="Github" />
-        </a>
-        <a href="https://twitter.com" target="_blank">
-          <img src="img/twitter_icon.svg" alt="Twitter" />
-        </a>
-        <a href="https://linkedin.com" target="_blank">
-          <img src="img/linkedin_icon.svg" alt="LinkedIn" />
-        </a>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>
+          <span class="intro1">Hi, </span><span class="intro2">I'm </span>
+          <span class="intro3">Andrew </span>
+          <span class="intro4">Stratton</span>
+          <br />
+          <span class="intro5">Stratton</span>
+        </h1>
+        <h2>
+          <span class="intro6"> a web developer based in Berlin, Germany.</span>
+        </h2>
+        <h2>
+          <span class="intro7"> a web developer </span>
+          <br />
+          <span class="intro8"> based in Berlin, Germany.</span>
+        </h2>
       </div>
-    </footer>
-  </div>
-  <script src="js/tota11y.min.js"></script>
-  <script src="js/scripts.js"></script>
-</body>
+    </section>
+    <!-- bio section -->
 
+    <div class="info-section">
+      <h1>Bio</h1>
+      <a class="button show-more">Mission Statement</a>
+      <div class="hidden-info">
+        I've always enjoyed creativity, in a structured kind of way. Problem
+        solving, making things fit, or work well, is somehow rewarding. I like
+        that sense of completion, when things come together, to flow
+        beautifully. <br />
+        <br />I think in this modern, technological world, there's a chance to
+        make an impact. The internet is a mega powerful tool, which can be
+        harnessed for great things. It is my hope that I can be a part of that.
+      </div>
+      <br />
+      <a class="button show-more">My Background</a>
+      <div class="hidden-info">
+        Born in Brighton, England, I've tried my hand at a few things. With an
+        interest in the mind, I made a diploma in hypnotherapy in 2003, which
+        led me to explore meditation and yoga. Some years later I pursued a
+        yearning to make things out of wood, to build in a very physical way,
+        and studied carpentry. Throughout this time I worked in social care,
+        mainly with people with autism and learning disabilities. <br /><br />A
+        few years ago I moved to Berlin with my family and decided to pursue web
+        development, out of a desire to be involved in helping to steer
+        technology in a beneficial direction.<br /><br />
+        Aside from programming, I also enjoy juggling, painting and being in
+        nature.
+      </div>
+
+      <!-- project section -->
+
+      <h1 id="myprojects">Development Projects</h1>
+      <div class="projects">
+        <img
+          src="img/meet-app.png"
+          class="project__image"
+          alt="Photo of Meet App"
+        />
+        <h1>Meet App</h1>
+        <p>
+          In this app users can search for events in cities city and adjust the
+          number of events displayed.
+        </p>
+        <p>
+          This app is a serverless, Progressive Web Application (PWA) built with
+          REACT, useing the Google Calandar API to fetch events. During the
+          build, unit, integration amd end-to-end tests were implimented.
+        </p>
+        <p>
+          The start of this project was my biggest challenge, setting up AWS
+          Lambda and writing the authentication code. I got stuck with a bug for
+          a while which I discovered to be a simple indentation that I'd missed.
+          But as soon as the application was up, I enjoyed creating the
+          different features.
+        </p>
+        <p>
+          I still prefer to make features first and then think about the test
+          senarios after, but I'm slowly getting my head around how to think
+          through the tests first.
+        </p>
+        <p>
+          There were times when I would hit a problem, trying to get something
+          to display a certain way, but there's nothing more satisfying than
+          resolving it. And sometimes discovering a neat trick or a way to do
+          things that was better than my original idea. There's always lots of
+          cool stuff to learn!
+        </p>
+        <p>
+          For this project I feel the charts and graphs are not overly useful
+          from a UX point of view, but they are more of a showcase to practice
+          and display different things that I can develop.
+        </p>
+        <a href="https://github.com/Adstrat/meet" class="button" target="blank"
+          >Code</a
+        >
+        <a href="https://adstrat.github.io/meet/" class="button" target="blank"
+          >Live</a
+        >
+      </div>
+      <div class="projects">
+        <img
+          src="img/pokemon-app.png"
+          class="project__image"
+          alt="Photo of Pokemon App"
+        />
+        <h1>Pokédex Web App</h1>
+        <p>
+          This application displays Pokemon buttons, which the user can click on
+          to uncover Pokemon statistics.
+        </p>
+        <p>
+          In the build I used the Bootstrap framework, and wrote it in HTML5,
+          CSS3, JavaScript and JQuery. It loads data from an external Pokemon
+          API.
+        </p>
+        <p>
+          Learning how to extract data from an API is a great skill to have, not
+          just from the documentation, but also from the console. This project
+          really helped me to get a grasp of inspecting in the developer tools.
+        </p>
+        <p>
+          I often find with coding, it's the small details which make a
+          difference. I had a few issues centralising the title on the navbar,
+          but tweeking image sizes and padding aligned everything. I feel too,
+          that small details, like adding a space after each comma for the types
+          of pokemon (which doesn't happen autom atically), is necessary for a
+          satisfying user experience.
+        </p>
+        <a
+          href="https://github.com/Adstrat/pokedex-js-app"
+          class="button"
+          target="blank"
+          >Code</a
+        >
+        <a
+          href="https://adstrat.github.io/pokedex-js-app/"
+          class="button"
+          target="blank"
+          >Live</a
+        >
+      </div>
+
+      <div class="projects">
+        <img
+          src="img/myFlix80s-app.png"
+          class="project__image"
+          alt="Photo of MyFlix80s App"
+        />
+        <h1>MyFlix80s</h1>
+        <p>
+          This project displays films from the 1980s. Users can find information
+          about directors, genres, year of release and so on, by clicking
+          through the different page views.
+        </p>
+        <p>
+          It was built using the MERN stack (mongodb, express, react and node),
+          as the client side of a previous backend project developing the
+          database.
+        </p>
+        <p>
+          React is not the easiest of libraries to master, but getting the hang
+          of props and states and finally being able to create a Single Page
+          Application (SPA) is a huge achievement. It's such a powerful tool to
+          have!
+        </p>
+        <p>
+          I often find the trickest past of any project is the user
+          authentication process. It takes a great deal of mental stamina and
+          patience to succeed in having a working login, registration and update
+          section. And that's what a big part of this project was about!
+        </p>
+        <a
+          href="https://github.com/Adstrat/myFlix80s-client"
+          class="button"
+          target="blank"
+          >Code</a
+        >
+        <a href="https://myflix80s.netlify.app/" class="button" target="blank"
+          >Live</a
+        >
+      </div>
+
+      <div class="projects">
+        <img
+          src="img/todo-app.png"
+          class="project__image"
+          alt="Photo of To Do List App"
+        />
+        <h1>To do List App</h1>
+        <p>
+          This is a simple to-do list app built using jQuery.
+        </p>
+        <a
+          href="https://github.com/Adstrat/to-do-list-app"
+          class="button"
+          target="blank"
+          >Code</a
+        >
+        <a
+          href="https://adstrat.github.io/to-do-list-app/"
+          class="button"
+          target="blank"
+          >Live</a
+        >
+      </div>
+      <footer class="page-footer">
+        <h3>Find me on</h3>
+        <div class="social-media">
+          <a href="https://github.com/Adstrat" target="_blank">
+            <img src="img/github_icon.svg" alt="Github" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="img/twitter_icon.svg" alt="Twitter" />
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <img src="img/linkedin_icon.svg" alt="LinkedIn" />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="js/tota11y.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
