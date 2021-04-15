@@ -134,7 +134,7 @@ button:focus,
   font-family: "New Tegomin", "monospace";
   background-color: var(--pea-green);
   color: var(--white);
-  padding: 3px 0;
+  padding: 3px 8px;
   animation: easeIn2 1.6s ease-out 0s;
 }
 
@@ -142,25 +142,31 @@ button:focus,
   font-family: "New Tegomin", "monospace";
   background-color: var(--pea-green);
   color: var(--white);
-  padding: 3px 0;
+  padding: 3px 2px;
   animation: easeIn2 2.2s ease-out 0s;
 }
 
 .intro4 {
   font-family: "New Tegomin", "monospace";
   background-color: var(--pea-green);
-  color: var(--white);kground-color: var(--white);
-  padding: 3px 10px 3px 0;
+  color: var(--white);
+  kground-color: var(--white);
+  padding: 3px 10px 3px 3px;
   animation: easeIn2 2.8s ease-out 0s;
 }
 
-.intro5 {
+.intro6 {
   font-family: "New Tegomin", "monospace";
   background-color: var(--pea-green);
   color: var(--white);
   padding: 3px 10px;
-  
   animation: easeIn2 4.5s ease-out 0s;
+}
+
+.intro5,
+.intro7,
+.intro8 {
+  display: none;
 }
 
 /* old stuff */
@@ -303,14 +309,56 @@ button:focus,
 }
 
 @media all and (max-width: 750px) {
-  .profile__portrait {
-    width: 250px;
-  }
   h1 {
     font-size: 25px;
   }
   h2 {
     font-size: 22px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .hero-inner {
+    padding-left: 30px;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .hero-inner {
+    padding: 80px 0 0 30px;
+  }
+  .intro4,
+  .intro6 {
+    display: none;
+  }
+  .intro5 {
+    display: inline-block;
+    font-family: "New Tegomin", "monospace";
+    background-color: var(--pea-green);
+    color: var(--white);
+    padding: 3px 10px;
+    animation: easeIn2 2.8s ease-out 0s;
+  }
+  .intro7,
+  .intro8 {
+    display: inline-block;
+    font-family: "New Tegomin", "monospace";
+    background-color: var(--pea-green);
+    color: var(--white);
+    padding: 3px 10px;
+    animation: easeIn2 4.5s ease-out 0s;
+  }
+}
+
+@media all and (max-width: 300px) {
+  h2 {
+    font-size: 16px;
   }
 }
 
