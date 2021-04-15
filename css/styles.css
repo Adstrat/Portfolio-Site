@@ -29,35 +29,13 @@
 }
 
 body {
-  background-color: var(--light-blue);
-  font-family: "Public Sans", "sans-serif";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-h1 {
-  font-size: 30px;
-  font-weight: var(--bold);
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: var(--bold);
-}
-
-h3 {
-  font-size: 18px;
-  font-weight: var(--bold);
+  font-family: "Open Sans", "Arial";
 }
 
 button,
 .button {
-  border: none;
   display: inline-block;
-  font-family: "Public Sans", "sans-serif";
-  background-color: var(--blue);
-  color: var(--white);
+  color: var(--black);
   text-decoration: none;
   padding: 10px;
   border-radius: var(--curved-corners);
@@ -84,20 +62,20 @@ button:focus,
 .hero {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-image: url("../img/berlin.jpg");
+  background-image: url("../img/nature.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.hero-inner {
+  padding-top: 100px;
+  padding-left: 80px;
+}
 
 .info-section {
-  background-color: var(--blue);
-  color: var(--white);
+  background-image: url("../img/old-paper.png");
+  color: var(--black);
   padding: 20px 8%;
   animation: easeIn 1.5s;
 }
@@ -116,9 +94,10 @@ button:focus,
 }
 
 .projects {
-  color: var(--white);
+  color: var(--black);
   margin: 20px 0;
-  border-top: 1px solid var(--light-blue);
+  padding: 20px 0;
+  border-top: 1px solid var(--black);
 }
 
 .project__image {
@@ -130,7 +109,7 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
-  border-top: 1px solid var(--light-blue);
+  border-top: 1px solid var(--black);
 }
 
 .social-media a {
@@ -143,43 +122,44 @@ button:focus,
   display: inline-block;
 }
 
-.content {
-  animation: easeIn 1.5s;
-}
-
 .intro1 {
-  font-family: "Inconsolata", "monospace";
-  background-color: var(--red);
-  padding: 3px 0 3px 8px;
-  animation: easeIn2 2.2s ease-out 0s;
+  font-family: "New Tegomin", "monospace";
+  background-color: var(--pea-green);
+  color: var(--white);
+  padding: 3px 0 3px 10px;
+  animation: easeIn2 1s ease-out 0s;
 }
 
 .intro2 {
-  font-family: "Inconsolata", "monospace";
-  background-color: var(--red);
+  font-family: "New Tegomin", "monospace";
+  background-color: var(--pea-green);
+  color: var(--white);
   padding: 3px 0;
-  animation: easeIn2 2.6s ease-out 0s;
+  animation: easeIn2 1.6s ease-out 0s;
 }
 
 .intro3 {
-  font-family: "Inconsolata", "monospace";
-  background-color: var(--red);
+  font-family: "New Tegomin", "monospace";
+  background-color: var(--pea-green);
+  color: var(--white);
   padding: 3px 0;
-  animation: easeIn2 3.2s ease-out 0s;
+  animation: easeIn2 2.2s ease-out 0s;
 }
 
 .intro4 {
-  font-family: "Inconsolata", "monospace";
-  background-color: var(--red);
-  padding: 3px 8px 3px 0;
-  animation: easeIn2 3.7s ease-out 0s;
+  font-family: "New Tegomin", "monospace";
+  background-color: var(--pea-green);
+  color: var(--white);kground-color: var(--white);
+  padding: 3px 10px 3px 0;
+  animation: easeIn2 2.8s ease-out 0s;
 }
 
 .intro5 {
-  font-family: "Inconsolata", "monospace";
-  background-color: var(--red);
-  padding: 3px 6px;
-  border: 1px solid var(--black);
+  font-family: "New Tegomin", "monospace";
+  background-color: var(--pea-green);
+  color: var(--white);
+  padding: 3px 10px;
+  
   animation: easeIn2 4.5s ease-out 0s;
 }
 
@@ -320,6 +300,18 @@ button:focus,
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@media all and (max-width: 750px) {
+  .profile__portrait {
+    width: 250px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 22px;
+  }
 }
 
 /*
