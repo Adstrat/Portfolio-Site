@@ -98,7 +98,7 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
-  border-top: 1px solid var(--black);
+  border-top: 2px solid var(--black);
 }
 
 .social-media a {
