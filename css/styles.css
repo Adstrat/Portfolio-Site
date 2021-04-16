@@ -202,7 +202,7 @@ button:focus,
 
 @media all and (max-width: 470px) {
   .hero-inner {
-    padding: 80px 0 0 30px;
+    padding: 70px 0 0 30px;
   }
   .intro4,
   .intro6 {
