@@ -2,21 +2,11 @@
 
 :root {
   /* colors */
-  --blue: #0073ea;
-  --grey: #767676;
-  --light-grey: #d8d8d8;
-  --light-blue: #cce0ff;
-  --dark-blue: #003e5f;
-  --brown: #492929;
+ 
   --pea-green: #597b32;
-  --pale-green: #5dc59a;
   --black: #000;
   --white: #fff;
-  --purple: #909;
-  --red: #bf0000;
-  --yellow-sun: #edc655;
-  --bright-yellow-sun: #fcffad;
-  --red-sun: #f76414;
+  --red: #990000;
 
   /* colors end */
 
@@ -46,9 +36,11 @@ button,
 button:hover,
 button:focus,
 .button:hover,
-.button:focus {
+.button:focus,
+.show-more:hover,
+.show-more:focus {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .hidden-info {
@@ -57,6 +49,12 @@ button:focus,
 
 .hidden-info.isVisible {
   display: block;
+}
+
+.show-more {
+  color: var(--red);
+  display: inline-block;
+  margin: 0;
 }
 
 .hero {
@@ -77,15 +75,6 @@ button:focus,
   background-image: url("../img/old-paper.png");
   color: var(--black);
   padding: 20px 8%;
-  animation: easeIn 1.5s;
-}
-
-.profile__portrait {
-  border-radius: 20%;
-  width: 300px;
-  padding: 2px;
-  border: 20px;
-  border: thick groove var(--red);
   animation: easeIn 1.5s;
 }
 
