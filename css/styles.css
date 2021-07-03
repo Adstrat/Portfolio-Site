@@ -2,7 +2,7 @@
 
 :root {
   /* colors */
- 
+
   --pea-green: #597b32;
   --black: #000;
   --white: #fff;
@@ -11,7 +11,6 @@
   /* colors end */
 
   --curved-corners: 3px;
-
 }
 
 * {
@@ -66,6 +65,7 @@ button:focus,
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .hero-inner {
   padding-top: 100px;
   padding-left: 80px;
@@ -86,7 +86,6 @@ button:focus,
   color: var(--black);
   margin: 20px 0;
   padding: 20px 0;
-  border-top: 2px solid var(--black);
 }
 
 .project__image {
@@ -178,6 +177,21 @@ button:focus,
     opacity: 100%;
   }
 }
+
+// to prevent hero screen jumping on mobiles when url bar disappears 
+@media (max-device-aspect-ratio: 3/4) {
+  height: calc(100vw * 1.333 - 9%);
+}
+@media (max-device-aspect-ratio: 2/3) {
+  height: calc(100vw * 1.5 - 9%);
+}
+@media (max-device-aspect-ratio: 10/16) {
+  height: calc(100vw * 1.6 - 9%);
+}
+@media (max-device-aspect-ratio: 9/16) {
+  height: calc(100vw * 1.778 - 9%);
+}
+
 
 @media all and (max-width: 750px) {
   h1 {
