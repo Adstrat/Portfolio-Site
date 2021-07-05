@@ -136,6 +136,10 @@ button:focus,
   border: 5px solid var(--white);
 }
 
+.project-image:hover {
+  transform: scale(1.01);
+}
+
 .page-footer {
   display: flex;
   flex-direction: column;
@@ -154,6 +158,10 @@ button:focus,
 .social-media a {
   text-decoration: none;
   padding: 15px;
+}
+
+.social-media a:hover {
+  opacity: 0.6;
 }
 
 .email-icon {
