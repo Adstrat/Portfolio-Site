@@ -106,6 +106,10 @@ button:focus,
   animation: easeIn 1.5s;
 }
 
+.project-section {
+  padding-bottom: 30px;
+}
+
 .bio {
   color: var(--black);
   margin: 20px 0;
@@ -305,9 +309,11 @@ button:focus,
   .project__item {
    width: 50%;
    justify-content: space-between;
-   padding: 25px 70px 25px 0;
   }
-  .project__title {
-    margin-top: 0;
+  .project__item:first-child {
+    padding: 25px 70px 25px 0;
+  }
+  .project-section {
+    padding-bottom: 60px;
   }
 }
