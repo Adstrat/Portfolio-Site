@@ -5,6 +5,7 @@
 
   --pea-green: #597b32;
   --black: #000;
+  --grey: #615F53;
   --white: #fff;
   --red: #990000;
 
@@ -19,6 +20,22 @@
 
 body {
   font-family: "Open Sans", "Arial";
+}
+
+h1,
+h2 {
+  letter-spacing: 0.04em;
+}
+
+p {
+  letter-spacing: 0.04em;
+  line-height: 150%;
+  color: var(--grey);
+}
+
+ul {
+  list-style-type: circle;
+  color: var(--red);
 }
 
 button,
@@ -37,9 +54,15 @@ button:focus,
 .button:hover,
 .button:focus,
 .show-more:hover,
-.show-more:focus {
+.show-more:focus,
+.link:hover,
+.link:focus {
   cursor: pointer;
   opacity: 0.6;
+}
+
+.view-project {
+  color: var(--red);
 }
 
 .hidden-info {
@@ -54,6 +77,11 @@ button:focus,
   color: var(--red);
   display: inline-block;
   margin: 0;
+}
+
+.link {
+  color: var(--red);
+  text-decoration: none;
 }
 
 .hero {
@@ -71,26 +99,37 @@ button:focus,
   padding-left: 80px;
 }
 
-.info-section {
+.main-section {
   background-image: url("../img/old-paper.png");
   color: var(--black);
   padding: 20px 8%;
   animation: easeIn 1.5s;
 }
 
-.profile__item {
-  text-align: center;
-}
-
-.projects {
+.bio {
   color: var(--black);
   margin: 20px 0;
   padding: 20px 0;
 }
 
-.project__image {
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  padding: 10px 80px 20px 0;
+}
+
+.project__item:last-child {
+  color: var(--black);
+  padding-bottom: 70px;
+}
+
+.project-image {
   width: 100%;
-  border: 2px solid var(--white);
+  border: 5px solid var(--white);
 }
 
 .page-footer {
@@ -100,8 +139,21 @@ button:focus,
   border-top: 2px solid var(--black);
 }
 
+.page-footer__text {
+  margin: 3px;
+}
+
+.social-media {
+  padding: 15px 0;
+}
+
 .social-media a {
   text-decoration: none;
+  padding: 15px;
+}
+
+.email-icon {
+  height: 50px;
 }
 
 .intro1 {
@@ -132,7 +184,6 @@ button:focus,
   font-family: "New Tegomin", "monospace";
   background-color: var(--pea-green);
   color: var(--white);
-  kground-color: var(--white);
   padding: 3px 10px 3px 3px;
   animation: easeIn2 2.8s ease-out 0s;
 }
@@ -178,7 +229,7 @@ button:focus,
   }
 }
 
-// to prevent hero screen jumping on mobiles when url bar disappears 
+/* to prevent hero screen jumping on mobiles when url bar disappears */
 @media (max-device-aspect-ratio: 3/4) {
   height: calc(100vw * 1.333 - 9%);
 }
@@ -191,7 +242,6 @@ button:focus,
 @media (max-device-aspect-ratio: 9/16) {
   height: calc(100vw * 1.778 - 9%);
 }
-
 
 @media all and (max-width: 750px) {
   h1 {
@@ -244,5 +294,20 @@ button:focus,
 @media all and (max-width: 300px) {
   h2 {
     font-size: 16px;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .project {
+    display: flex;
+    flex-direction: row;
+  }
+  .project__item {
+   width: 50%;
+   justify-content: space-between;
+   padding: 25px 70px 25px 0;
+  }
+  .project__title {
+    margin-top: 0;
   }
 }
