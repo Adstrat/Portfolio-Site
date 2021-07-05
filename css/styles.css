@@ -92,6 +92,7 @@ button:focus,
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  transition: height 1s;
 }
 
 .hero-inner {
@@ -238,28 +239,6 @@ button:focus,
   }
   100% {
     opacity: 100%;
-  }
-}
-
-/* to prevent hero screen jumping on mobiles when url bar disappears */
-@media (max-device-aspect-ratio: 3/4) {
-  .hero {
-    height: calc(100vw * 1.333);
-  }
-}
-@media (max-device-aspect-ratio: 2/3) {
-  .hero {
-  height: calc(100vw * 1.5);
-  }
-}
-@media (max-device-aspect-ratio: 10/16) {
-  .hero {
-  height: calc(100vw * 1.6);
-  }
-}
-@media (max-device-aspect-ratio: 9/16) {
-  .hero {
-  height: calc(100vw * 1.778);
   }
 }
 
