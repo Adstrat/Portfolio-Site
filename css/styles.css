@@ -8,6 +8,7 @@
   --grey: #615F53;
   --white: #fff;
   --red: #990000;
+  --blue: #14a2c2;
 
   /* colors end */
 
@@ -314,5 +315,57 @@ button:focus,
   }
   .project-section {
     padding-bottom: 60px;
+  }
+}
+
+/* Case Study Styles */
+
+.case-study__title {
+  padding: 50px 0;
+  font-size: 40px;
+  letter-spacing: 0.07em;
+}
+
+.overview-project {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+  align-items: center;
+}
+.overview-project__item {
+ width: 50%;
+ justify-content: space-between;
+}
+.overview-project__item:first-child {
+  padding-right: 70px;
+}
+.overview-project__section {
+  padding-bottom: 60px;
+}
+
+.overview-project__image {
+  width: 100%;
+  border: 5px solid var(--white);
+}
+
+.overview-text {
+  padding-bottom: 50px;
+}
+
+.app-image {
+  width: 100%;
+  border: 5px solid var(--blue);
+}
+
+@media all and (max-width: 800px) {
+  .overview-project {
+    flex-direction: column;
+  }
+  .overview-project__item {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .column-reverse {
+    flex-direction: column-reverse;
   }
 }
