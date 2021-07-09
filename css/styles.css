@@ -336,9 +336,16 @@ button:focus,
  width: 50%;
  justify-content: space-between;
 }
+
 .overview-project__item:first-child {
-  padding-right: 70px;
+  padding-right: 30px;
 }
+.overview-project__item:last-child {
+  padding-left: 30px;
+}
+
+
+
 .overview-project__section {
   padding-bottom: 60px;
 }
@@ -352,9 +359,15 @@ button:focus,
   padding-bottom: 50px;
 }
 
-.app-image {
-  width: 100%;
-  border: 5px solid var(--blue);
+.code {
+  color: var(--red);
+  font-size: 20px;
+}
+
+@media all and (max-width: 1100px) {
+  .overview-project__image:hover {
+    transform: scale(1.30);
+  }
 }
 
 @media all and (max-width: 800px) {
@@ -365,7 +378,16 @@ button:focus,
     width: 100%;
     padding-bottom: 30px;
   }
+  .overview-project__item:first-child {
+    padding-right: 0;
+  }
+  .overview-project__item:last-child {
+    padding-left: 0;
+  }
   .column-reverse {
     flex-direction: column-reverse;
+  }
+  .overview-project__image:hover {
+    transform: scale(1);
   }
 }
