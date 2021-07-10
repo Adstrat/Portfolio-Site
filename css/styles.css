@@ -62,7 +62,9 @@ button:focus,
 .show-more:hover,
 .show-more:focus,
 .link:hover,
-.link:focus {
+.link:focus,
+.email:hover,
+.email:focus {
   cursor: pointer;
   opacity: 0.6;
 }
@@ -85,9 +87,21 @@ button:focus,
   margin: 0;
 }
 
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 10%;
+  font-size: 20px;
+}
+
 .link {
   color: var(--red);
   text-decoration: none;
+}
+
+.email {
+  border-bottom: 2px solid var(--red);
+  font-size: 18px;
 }
 
 #hero {
@@ -110,10 +124,6 @@ button:focus,
   color: var(--black);
   padding: 20px 8%;
   animation: easeIn 1.5s;
-}
-
-.project-section {
-  padding-bottom: 30px;
 }
 
 .bio {
@@ -144,6 +154,10 @@ button:focus,
 
 .project-image:hover {
   transform: scale(1.01);
+}
+
+.contact-container {
+  padding: 70px 0 120px 0;
 }
 
 .page-footer {
