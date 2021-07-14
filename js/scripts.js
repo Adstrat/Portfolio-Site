@@ -8,8 +8,3 @@ document.querySelectorAll(".show-more").forEach(button => {
     }
   });
 });
-
-imageHeight = document.getElementById('hero').clientHeight;
-
-// if (isMobile)       
-document.getElementById('hero').setAttribute("style", "height:" + imageHeight + "px");
