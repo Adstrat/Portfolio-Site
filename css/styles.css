@@ -285,7 +285,7 @@ button:focus,
 
 @media all and (max-width: 470px) {
   #hero {
-    width: 100%;
+    width: 100vw;
     background-image: url("../img/andy-in-nature-mobile.jpg");
     background-size: contain;
     background-position: top;
