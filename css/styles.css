@@ -22,7 +22,7 @@
 
 body {
   font-family: "Open Sans", "Arial";
-  background-image: url("../img/old-paper.png");
+
 }
 
 h1,
@@ -122,6 +122,7 @@ button:focus,
 }
 
 .main-section {
+  background-image: url("../img/old-paper.png");
   color: var(--black);
   padding: 20px 8%;
   animation: easeIn 1.5s;
