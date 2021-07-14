@@ -22,6 +22,7 @@
 
 body {
   font-family: "Open Sans", "Arial";
+  background-image: url("../img/old-paper.png");
 }
 
 h1,
@@ -108,7 +109,7 @@ button:focus,
 #hero {
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/nature.jpg");
+  background-image: url("../img/andy-in-nature.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -121,7 +122,6 @@ button:focus,
 }
 
 .main-section {
-  background-image: url("../img/old-paper.png");
   color: var(--black);
   padding: 20px 8%;
   animation: easeIn 1.5s;
@@ -284,6 +284,15 @@ button:focus,
 }
 
 @media all and (max-width: 470px) {
+  #hero {
+    width: 100%;
+    background-image: url("../img/andy-in-nature-mobile.jpg");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
   .hero-inner {
     padding: 70px 0 0 30px;
   }
