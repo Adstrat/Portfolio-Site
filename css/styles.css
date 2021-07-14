@@ -6,6 +6,7 @@
   --pea-green: #597b32;
   --black: #000;
   --grey: #615F53;
+  --dark-grey: #2e2b19;
   --white: #fff;
   --red: #990000;
   --blue: #14a2c2;
@@ -41,7 +42,7 @@ p {
 
 ul {
   list-style-type: circle;
-  color: var(--red);
+  color: var(--dark-grey);
 }
 
 button,
@@ -358,8 +359,6 @@ button:focus,
   padding-left: 30px;
 }
 
-
-
 .overview-project__section {
   padding-bottom: 60px;
 }
@@ -376,6 +375,21 @@ button:focus,
 .code {
   color: var(--red);
   font-size: 20px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-to-main__myflix {
+  padding: 90px 0;
+  font-size: 18px;
+}
+
+.back-to-main__links {
+  padding-top: 20px;
+  font-size: 18px;
 }
 
 @media all and (max-width: 1100px) {
