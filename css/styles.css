@@ -362,7 +362,7 @@ button:focus,
 /* Case Study Styles */
 
 .case-study__title {
-  padding: 50px 0;
+  padding: 70px 0;
   font-size: 40px;
   letter-spacing: 0.07em;
 }
@@ -403,19 +403,13 @@ button:focus,
   font-size: 20px;
 }
 
-.links-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.back-to-main__myflix {
-  padding: 90px 0;
+.back-to-main {
+  padding: 20px;
   font-size: 18px;
-}
-
-.back-to-main__links {
-  padding-top: 20px;
-  font-size: 18px;
+  position: fixed;
+  right: 50px;
+  background-image: url("../img/old-paper.png");
+  border-radius: var(--curved-corners);
 }
 
 @media all and (max-width: 1100px) {
