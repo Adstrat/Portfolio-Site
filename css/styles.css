@@ -407,9 +407,15 @@ button:focus,
   padding: 20px;
   font-size: 18px;
   position: fixed;
-  right: 50px;
+  right: 20px;
   background-image: url("../img/old-paper.png");
   border-radius: var(--curved-corners);
+}
+
+@media all and (min-width: 420px) {
+  .back-to-main {
+    right: 50px;
+  }
 }
 
 @media all and (max-width: 1100px) {
