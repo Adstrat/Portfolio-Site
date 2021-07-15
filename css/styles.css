@@ -41,11 +41,6 @@ p {
   letter-spacing: 0.07em;
 }
 
-ul {
-  list-style-type: circle;
-  color: var(--dark-grey);
-}
-
 button,
 .button {
   display: inline-block;
@@ -69,192 +64,6 @@ button:focus,
 .email:focus {
   cursor: pointer;
   opacity: 0.6;
-}
-
-/* show more, show less - see JS for function */
-
-.hidden-info {
-  display: none;
-}
-
-.hidden-info.isVisible {
-  display: block;
-}
-
-.show-more {
-  color: var(--red);
-  display: inline-block;
-  margin: 0;
-}
-
-.links {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 15px 10%;
-  font-size: 20px;
-}
-
-.link {
-  color: var(--red);
-  text-decoration: none;
-}
-
-.email {
-  border-bottom: 2px solid var(--red);
-  font-size: 18px;
-}
-
-.main-section {
-  color: var(--black);
-  padding: 20px 8%;
-  animation: easeIn 1.5s;
-}
-
-.bio {
-  color: var(--black);
-  margin: 20px 0;
-  padding: 20px 0;
-}
-
-/* list for skills */
-
-.skills {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.skills li {
-  padding: 10px 80px 20px 0;
-}
-
-.project__item:last-child {
-  color: var(--black);
-  padding-bottom: 70px;
-}
-
-.project-image {
-  width: 100%;
-  border: 5px solid var(--white);
-}
-
-.project-image:hover {
-  transform: scale(1.01);
-}
-
-.contact-container {
-  padding: 70px 0 120px 0;
-}
-
-/* Footer */
-
-.page-footer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  border-top: 2px solid var(--black);
-}
-
-.page-footer__text {
-  margin: 3px;
-}
-
-.social-media {
-  padding: 15px 0;
-}
-
-.social-media a {
-  text-decoration: none;
-  padding: 8px;
-}
-
-.social-media a:hover {
-  opacity: 0.6;
-}
-
-.social-icon {
-  height: 36px;
-}
-
-@media all and (min-width: 570px) {
-  .social-icon {
-    height: 50px;
-  }
-  .social-media a {
-    padding: 15px;
-  }
-}
-
-/* intro animation */
-
-.intro1 {
-  font-family: "New Tegomin", "monospace";
-  background-color: var(--pea-green);
-  color: var(--white);
-  padding: 3px 0 3px 10px;
-  animation: easeIn2 1s ease-out 0s;
-}
-
-.intro2 {
-  font-family: "New Tegomin", "monospace";
-  background-color: var(--pea-green);
-  color: var(--white);
-  padding: 3px 8px;
-  animation: easeIn2 1.6s ease-out 0s;
-}
-
-.intro3 {
-  font-family: "New Tegomin", "monospace";
-  background-color: var(--pea-green);
-  color: var(--white);
-  padding: 3px 10px;
-  animation: easeIn2 2.2s ease-out 0s;
-}
-
-.intro4 {
-  display: inline-block;
-  font-family: "New Tegomin", "monospace";
-  background-color: var(--pea-green);
-  color: var(--white);
-  padding: 10px 10px 6px 10px;
-  animation: easeIn2 2.8s ease-out 0s;
-}
-
-.intro5,
-.intro6 {
-  display: inline-block;
-  font-family: "New Tegomin", "monospace";
-  background-color: var(--pea-green);
-  color: var(--white);
-  padding: 3px 10px 6px 10px;
-  animation: easeIn2 4.5s ease-out 0s;
-}
-
-@keyframes easeIn {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 50%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes easeIn2 {
-  0% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
 }
 
 /* HERO with its media queries */
@@ -339,8 +148,139 @@ button:focus,
   }
 }
 
+/* intro animation */
 
-/* media queries for project section */
+.intro1 {
+  font-family: "New Tegomin", "monospace";
+  background-color: var(--pea-green);
+  color: var(--white);
+  padding: 3px 0 3px 10px;
+  animation: easeIn2 1s ease-out 0s;
+}
+
+.intro2 {
+  font-family: "New Tegomin", "monospace";
+  background-color: var(--pea-green);
+  color: var(--white);
+  padding: 3px 8px;
+  animation: easeIn2 1.6s ease-out 0s;
+}
+
+.intro3 {
+  font-family: "New Tegomin", "monospace";
+  background-color: var(--pea-green);
+  color: var(--white);
+  padding: 3px 10px;
+  animation: easeIn2 2.2s ease-out 0s;
+}
+
+.intro4 {
+  display: inline-block;
+  font-family: "New Tegomin", "monospace";
+  background-color: var(--pea-green);
+  color: var(--white);
+  padding: 10px 10px 6px 10px;
+  animation: easeIn2 2.8s ease-out 0s;
+}
+
+.intro5,
+.intro6 {
+  display: inline-block;
+  font-family: "New Tegomin", "monospace";
+  background-color: var(--pea-green);
+  color: var(--white);
+  padding: 3px 10px 6px 10px;
+  animation: easeIn2 4.5s ease-out 0s;
+}
+
+@keyframes easeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes easeIn2 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* main section */
+
+.main-section {
+  color: var(--black);
+  padding: 20px 8%;
+  animation: easeIn 1.5s;
+}
+
+/* hyperlinks */
+
+.link-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 10%;
+  font-size: 20px;
+}
+
+.link {
+  color: var(--red);
+  text-decoration: none;
+}
+
+/* Bio */
+
+.bio {
+  color: var(--black);
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+/* list for skills (also used for tools on myFlix.html page) */
+
+ul {
+  list-style-type: circle;
+  color: var(--dark-grey);
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  padding: 10px 80px 20px 0;
+}
+
+/* project section with media queries */
+
+.project-image {
+  width: 100%;
+  border: 5px solid var(--white);
+}
+
+.project-image:hover {
+  transform: scale(1.01);
+}
+
+.project__item:last-child {
+  padding-bottom: 70px;
+}
 
 @media all and (min-width: 1100px) {
   .project {
@@ -359,7 +299,74 @@ button:focus,
   }
 }
 
-/* Case Study Styles */
+/* show more, show less - see also JS for function */
+
+.hidden-info {
+  display: none;
+}
+
+.hidden-info.isVisible {
+  display: block;
+}
+
+.show-more {
+  color: var(--red);
+  display: inline-block;
+  margin: 0;
+}
+
+/* contact section */
+
+.contact-container {
+  padding: 70px 0 120px 0;
+}
+
+.email {
+  border-bottom: 2px solid var(--red);
+  font-size: 18px;
+}
+
+/* Footer */
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-top: 2px solid var(--black);
+}
+
+.page-footer__text {
+  margin: 3px;
+}
+
+.social-media {
+  padding: 15px 0;
+}
+
+.social-media a {
+  text-decoration: none;
+  padding: 8px;
+}
+
+.social-media a:hover {
+  opacity: 0.6;
+}
+
+.social-icon {
+  height: 36px;
+}
+
+@media all and (min-width: 570px) {
+  .social-icon {
+    height: 50px;
+  }
+  .social-media a {
+    padding: 15px;
+  }
+}
+
+
+/* myFlix.html file */
 
 .case-study__title {
   padding: 70px 0;
