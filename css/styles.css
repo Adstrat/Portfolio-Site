@@ -250,7 +250,7 @@ button:focus,
   padding: 20px 0;
 }
 
-/* list for skills (also used for tools on myFlix.html page) */
+/* list for skills (and tools on myFlix page) uses grid when supported */
 
 ul {
   list-style-type: circle;
@@ -258,13 +258,36 @@ ul {
 }
 
 .skills {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: inline-block;
+  width: 400px;
+ }
+
+ .skills li {
+  padding: 10px 60px 20px 0;
 }
 
-.skills li {
-  padding: 10px 80px 20px 0;
+@supports (display: grid) {
+    
+  @media all and (min-width: 560px) {
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: auto;
+    }
+    
+  }
+  
+  @media all and (min-width: 820px) {
+    .skills {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @media all and (min-width: 1000px) {
+    .skills {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
 }
 
 /* project section with media queries */
