@@ -259,11 +259,11 @@ ul {
 
 .skills {
   display: inline-block;
-  width: 400px;
+  width: 240px;
  }
 
  .skills li {
-  padding: 10px 60px 20px 0;
+  padding: 10px 40px 20px 0;
 }
 
 @supports (display: grid) {
