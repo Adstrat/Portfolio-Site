@@ -210,9 +210,15 @@ h2 {
   font-family: "New Tegomin", "monospace";
   background-color: var(--white);
   color: var(--pea-green);
+  border: 1px solid var(--pea-green);
   text-decoration: none;
   padding: 3px 10px 6px 10px;
   animation: easeIn2 6s ease-out 0s;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+  opacity: 0.8;
 }
 
 @keyframes easeIn {
